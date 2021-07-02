@@ -54,7 +54,7 @@ class linkList {
         String nombre = personas.first.getNombre();
         int edad = personas.first.getEdad();
 
-        Persona newLink = new Persona(nombre, edad);    // make new link
+        Persona newLink = personas.first;    // make new link
         Persona previous = null;            // start at first
         Persona current = first;
         // until end of list,
@@ -72,6 +72,7 @@ class linkList {
         newLink.next = current;          // newLink --> old currnt
 
         System.out.println(" Ordenadas por edad: ");
+        System.out.println("");
         while (current != null) // until end of list,
         {
             current.mostrarDatos();// print data
