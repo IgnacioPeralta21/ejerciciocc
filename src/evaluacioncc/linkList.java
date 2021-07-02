@@ -62,7 +62,7 @@ class LinkListApp
       Personas.insertFirst("Jose", 14);
       Personas.insertFirst("Juan", 40);
       Personas.insertFirst("Sofia", 8);
-      Personas.insertFirst("Camila", 22);
+      Personas.insertFirst("Camila", 23);
 
       Personas.displayList();              // display list
       
