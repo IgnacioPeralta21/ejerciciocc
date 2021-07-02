@@ -36,8 +36,9 @@ public class Persona{
         this.edad = edad;
     }
 
-    public String displayList() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + '}';
+    public void mostrarDatos() {
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Edad :"+edad);
     }
     
     

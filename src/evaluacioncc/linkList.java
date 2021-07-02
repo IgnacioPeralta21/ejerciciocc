@@ -36,11 +36,13 @@ class linkList
 // -------------------------------------------------------------
    public void displayList()
       {
-      System.out.print("List (first-->last): ");
+      System.out.println("List (first-->last): ");
+          System.out.println("");
       Persona current = first;       // start at beginning of list
       while(current != null)      // until end of list,
          {
-         current.displayList();   // print data
+         current.mostrarDatos();// print data
+             System.out.println("--------------------------------");
          current = current.next;  // move to next link
          }
       System.out.println("");
