@@ -7,7 +7,8 @@ package evaluacioncc;
 ////////////////////////////////////////////////////////////////
 
 /**
- * RICARDO CARRASCO S.
+ *IGNACIO PERALTA
+ *RICARDO CARRASCO
  *
  *
  */
@@ -50,7 +51,7 @@ class linkList {
         Persona current = first;       // start at beginning of list
         while (current != null) // until end of list,
         {
-            current.mostrarDatos();// print data
+            current.mostrarDatos();// MUESTRA LOS DATOS DE LA CLASE PERSONA
             System.out.println("--------------------------------");
             current = current.next;  // move to next link
         }
@@ -64,7 +65,7 @@ class linkList {
         Persona previous = null;            // start at first
         Persona current = first;
         // until end of list,
-        while (current != null && edad > current.getEdad()) {                             // or key > current,
+        while (current != null && edad > current.getEdad()) {    //COMPARA LA EDAD DEL NEVO INGRESO VS LA ACTUAL PRIMERA EN LA LISTA                         // or key > current,
             previous = current;
             current = current.next;       // go to next item
         }
@@ -88,7 +89,7 @@ class LinkListApp {
 
         linkList Personas = new linkList();
 
-        Personas.ordenarLista("Ignacio", 23);
+        Personas.ordenarLista("Ignacio", 23);  //SE UTILIZA EL ODERNARLISTA EN VEZ DEL INSERTFIRST
         Personas.ordenarLista("Maria", 35);
         Personas.ordenarLista("Jose", 14);
         Personas.ordenarLista("Juan", 40);
